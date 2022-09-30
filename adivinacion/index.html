@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el numero</title>
+    <script>
+        function imprimir(frase){
+            document.write(frase);
+        }
+        var numeropensando = Math.round(Math.random() * 50);
+        var nombre = prompt("Bienvenido al juego de adivinacion, decime tu nombre?");
+        var numeroLanzado = parseInt(prompt( nombre + " ingrese un numero del 1 al 50"));
+        
+        var intentos = 0;
+
+        for(intentos; intentos < 5; intentos++){
+            if(numeropensando == numeroLanzado){
+            imprimir( nombre + " Bien , acertaste!!");
+        }
+        else{
+            imprimir(nombre + " no!! , erraste!, el numero era "  + numeropensando)
+            break;
+        }
+
+        }
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
